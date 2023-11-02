@@ -38,7 +38,7 @@ async function run() {
 
       // const query = {"name": "Sunglasses"}//get the specific data of array
 
-      const cursor = productCollection.find().sort({price: 1})//1 for ascending -1 for descending
+      const cursor = productCollection.find().sort({price: 1}).skip(5)//skip the first 5 items
       // .project({name: true, _id:0, category: true});//get the name and category
       const products = await cursor.toArray();
       res.send(products);
