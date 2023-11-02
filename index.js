@@ -37,7 +37,7 @@ async function run() {
     app.get("/products", async (req, res) => {
       // const query = {"name": "Sunglasses"}//get the specific data of array
 
-      const cursor = productCollection.find()
+      const cursor = productCollection.find();
       // .project({name: true, _id:0, category: true});//get the name and category
       const products = await cursor.toArray();
       res.send(products);
@@ -49,14 +49,14 @@ async function run() {
 
     // get single product with findOne method
     app.get("/product/:id", async (req, res) => {
-      const id  = req.params.id;
-      const query =  {_id : new ObjectId(id)}
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
       const product = await productCollection.findOne(query, {
-        projection: {name : true}
-      })
+        projection: { name: true },
+      });
       console.log(product);
       res.send(product);
-    })
+    });
 
     await client.db("admin").command({ ping: 1 });
     console.log(
