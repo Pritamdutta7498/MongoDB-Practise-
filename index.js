@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const { MongoClient, ServerApiVersion } = require("mongodb");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 require("dotenv").config();
 
 const port = process.env.PORT || 5000;
@@ -50,7 +50,10 @@ async function run() {
     // get single product with findOne method
     app.get("/product/:id", async (req, res) => {
       const id  = req.params.id;
-      console.log(object);
+      const query =  {_id : new ObjectId(id)}
+      const product = await productCollection.findOne(query)
+      console.log(product);
+      res.send(product);
     })
 
     await client.db("admin").command({ ping: 1 });
