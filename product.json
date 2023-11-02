@@ -1,0 +1,129 @@
+[
+    {
+      "name": "Sunglasses",
+      "description": "Stylish non-polarized sunglasses with steel frame",
+      "price": 30.00,
+      "category": "Fashion",
+      "image": "https://example.com/sunglasses.jpg"
+    },
+    {
+      "name": "Leather Jacket",
+      "description": "Genuine leather jacket with a classic design",
+      "price": 150.00,
+      "category": "Fashion",
+      "image": "https://example.com/leather-jacket.jpg"
+    },
+    {
+      "name": "Watch",
+      "description": "Elegant wristwatch with a leather strap",
+      "price": 75.00,
+      "category": "Fashion",
+      "image": "https://example.com/watch.jpg"
+    },
+    {
+      "name": "Running Shoes",
+      "description": "High-performance running shoes for men",
+      "price": 80.00,
+      "category": "Footwear",
+      "image": "https://example.com/running-shoes.jpg"
+    },
+    {
+      "name": "Business Suit",
+      "description": "Tailored business suit for a sharp look",
+      "price": 200.00,
+      "category": "Fashion",
+      "image": "https://example.com/business-suit.jpg"
+    },
+    {
+      "name": "Backpack",
+      "description": "Durable backpack for daily use",
+      "price": 45.00,
+      "category": "Accessories",
+      "image": "https://example.com/backpack.jpg"
+    },
+    {
+      "name": "Tie",
+      "description": "Silk tie with a modern design",
+      "price": 25.00,
+      "category": "Fashion",
+      "image": "https://example.com/tie.jpg"
+    },
+    {
+      "name": "Denim Jeans",
+      "description": "Classic denim jeans for casual wear",
+      "price": 40.00,
+      "category": "Fashion",
+      "image": "https://example.com/denim-jeans.jpg"
+    },
+    {
+      "name": "Cufflinks",
+      "description": "Elegant cufflinks for formal occasions",
+      "price": 15.00,
+      "category": "Accessories",
+      "image": "https://example.com/cufflinks.jpg"
+    },
+    {
+      "name": "Dress Shirt",
+      "description": "Crisp dress shirt for a polished look",
+      "price": 35.00,
+      "category": "Fashion",
+      "image": "https://example.com/dress-shirt.jpg"
+    },
+    {
+      "name": "Belt",
+      "description": "Genuine leather belt with a stylish buckle",
+      "price": 20.00,
+      "category": "Accessories",
+      "image": "https://example.com/belt.jpg"
+    },
+    {
+      "name": "Sneakers",
+      "description": "Comfortable sneakers for everyday wear",
+      "price": 50.00,
+      "category": "Footwear",
+      "image": "https://example.com/sneakers.jpg"
+    },
+    {
+      "name": "Sports Jacket",
+      "description": "Sporty jacket with a modern design",
+      "price": 70.00,
+      "category": "Fashion",
+      "image": "https://example.com/sports-jacket.jpg"
+    },
+    {
+      "name": "Winter Coat",
+      "description": "Warm winter coat for cold days",
+      "price": 120.00,
+      "category": "Fashion",
+      "image": "https://example.com/winter-coat.jpg"
+    },
+    {
+      "name": "Wristband",
+      "description": "Stylish wristband for a sporty look",
+      "price": 10.00,
+      "category": "Accessories",
+      "image": "https://example.com/wristband.jpg"
+    },
+    {
+      "name": "Casual Shirt",
+      "description": "Relaxed-fit casual shirt for leisure",
+      "price": 30.00,
+      "category": "Fashion",
+      "image": "https://example.com/casual-shirt.jpg"
+    },
+    {
+      "name": "Slippers",
+      "description": "Cozy slippers for indoor comfort",
+      "price": 15.00,
+      "category": "Footwear",
+      "image": "https://example.com/slippers.jpg"
+    },
+    {
+      "name": "Wallet",
+      "description": "Sleek leather wallet with multiple compartments",
+      "price": 20.00,
+      "category": "Accessories",
+      "image": "https://example.com/wallet.jpg"
+    }
+]
+  
