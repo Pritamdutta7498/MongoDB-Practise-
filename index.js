@@ -37,7 +37,7 @@ async function run() {
     app.get('/products', async(req, res)=>{
 
       const query = {"name": "Sunglasses"}//get the specific data of array
-      const cursor = productCollection.find(query);
+      const cursor = productCollection.find(query).project({name: true})
       const products = await cursor.toArray();
       res.send(products);
 
