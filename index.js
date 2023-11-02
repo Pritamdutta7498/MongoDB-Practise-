@@ -32,26 +32,30 @@ async function run() {
     await client.connect();
     // here you can start yor work-----
 
-    const productCollection =  client.db("ProductDB").collection("products");
+    const productCollection = client.db("ProductDB").collection("products");
 
-    app.get('/products', async(req, res)=>{
-
+    app.get("/products", async (req, res) => {
       // const query = {"name": "Sunglasses"}//get the specific data of array
 
-      const cursor = productCollection.find().sort({price: 1}).skip(5).limit(3)//get only first 3 data
+      const cursor = productCollection
+        .find()
+        .sort({ price: 1 })
+        .skip(5)
+        .limit(3); //get only first 3 data
       // .project({name: true, _id:0, category: true});//get the name and category
       const products = await cursor.toArray();
       res.send(products);
 
-
       // simple way
       // const result =  await productCollection.find().toArray();
       // res.send(result);
-      
+    });
+
+    // get single product with findOne method
+    app.get("/product/:id", async (req, res) => {
+      const id  = req.params.id;
+      console.log(object);
     })
-
-
-
 
     await client.db("admin").command({ ping: 1 });
     console.log(
