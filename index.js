@@ -51,7 +51,9 @@ async function run() {
     app.get("/product/:id", async (req, res) => {
       const id  = req.params.id;
       const query =  {_id : new ObjectId(id)}
-      const product = await productCollection.findOne(query)
+      const product = await productCollection.findOne(query, {
+        projection: {name : true}
+      })
       console.log(product);
       res.send(product);
     })
